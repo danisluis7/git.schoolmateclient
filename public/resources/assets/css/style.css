@@ -1,0 +1,649 @@
+@charset "utf-8";
+@font-face {
+    font-family: HelveticaNeue;
+    src: url('../fonts/HelveticaNeue.ttf');
+}
+/* CSS Document */
+/**
+ * @author: Lorence
+ * Part1: Writting CSS to reset a lot of default components
+ * Website: https://www.templatemonster.com/demo/52055.html;
+ * Website: https://www.templatemonster.com/demo/61124.html
+ */
+h4, h5, h6, h1, h2, h3 {margin-top:0;}
+ul,ol{margin:0;}
+p{margin:0;}
+ul{list-style-type: none;}
+a:hover{
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+}
+html,body{
+	font-family:'Roboto',sans-serif;
+	font-size:100%;
+	width: 100%;
+	overflow:hidden;
+	overflow-y: scroll;
+}
+/**
+ * @Author: Lorence
+ * @Purpose: Design Website Template;
+ * Let 's start 
+ * CSS for title navigation menu left
+ */
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#wrapper.toggled {
+  padding-left: 250px;
+}
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #303641; 	
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+  overflow:auto;
+}
+/* Sidebar Styles */
+#avatar div:nth-child(1){
+	margin-left: 0px;
+	margin-top: 8px;
+}
+#avatar div:nth-child(1) img{
+	width: 80px;
+	height: 80px;
+}
+#avatar div:nth-child(2){
+	margin-top: 12px;
+	text-align: center;
+}
+#avatar div:nth-child(2) h4{
+	margin-top: 4px;
+	margin-left: -24px;
+	font-size: 16px;
+	color: rgb(199, 237, 233);
+	text-shadow: rgb(3, 3, 3) 4px 4px 4px;
+}
+#avatar div:nth-child(2) p{
+	margin-left: -24px;
+	color: rgb(97, 97, 97);
+	font-size: 14px;
+	text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+}
+/**
+ * CSS for navigation menu left
+ */
+#menu{
+	background-color: #303641; 	
+}
+#menu h2{
+	color: rgb(239, 247, 247);
+	font-size: 24px;
+	text-shadow: rgba(255, 255, 255, 0.0980392) -1px -1px 1px, rgba(0, 0, 0, 0.498039) 1px 1px 1px;
+}
+#menu ul{
+	list-style: none;
+	margin: 10px;
+}
+#menu ul li{
+	background-color: #303641;
+	border:none;
+}
+#menu .title{
+	color: rgb(206, 240, 234);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	text-shadow: rgba(255, 255, 255, 0.0980392) -1px -1px 1px, rgba(0, 0, 0, 0.498039) 1px 1px 1px;
+}
+#menu ul li a{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: rgb(206, 240, 234);
+	font-size: 14px;
+	text-shadow: rgba(255, 255, 255, 0.0980392) -1px -1px 1px, rgba(0, 0, 0, 0.498039) 1px 1px 1px;
+}
+#menu ul li a .a{
+	margin-right: 12px;
+}
+.subMenu{
+	margin-top: 0px;
+}
+.subMenu li{
+	margin-left: -12px;
+	padding: 2px;
+}
+/** ==> Javscript : create menu level 2 **/
+#DashboardOk{
+	display: none;
+}
+#FormsOk{
+	display: none;	
+}
+#UIElementsOk{
+	display: none;	
+}
+#WidgetsOk{
+	display: none;	
+}
+#PagesOk{
+	display: none;	
+}
+#ChartsOk{
+	display: none;	
+}
+#TablesOk{
+	display: none;	
+}
+#MapsOk{
+	display: none;	
+}
+#TypographyOk{
+	display: none;	
+}
+#MenuLevelsOk{
+	display: none;	
+}
+.badge-error {
+  background-color: #b94a48;
+}
+.badge-error:hover {
+  background-color: #953b39;
+}
+.badge-warning {
+  background-color: #f89406;
+}
+.badge-warning:hover {
+  background-color: #c67605;
+}
+.badge-success {
+  background-color: #468847;
+}
+.badge-success:hover {
+  background-color: #356635;
+}
+.badge-info {
+  background-color: #3a87ad;
+}
+.badge-info:hover {
+  background-color: #2d6987;
+}
+.badge-inverse {
+  background-color: #333333;
+}
+.badge-inverse:hover {
+  background-color: #1a1a1a;
+}
+@media(min-width:768px) {
+	/** Piority website template **/
+}	
+/**
+ * CSS for top menu
+ */
+#topMenu{
+ 	background-color: #303641;
+ 	margin-bottom: 16px;
+ 	padding-left: 16px;
+}
+#drawer-btn{
+	width: 24px;
+	height: 21px;
+	cursor: pointer;
+	margin-top: 16px;
+	margin-left: -30px;
+}
+#drawer-btn span{
+	height: 3px;
+	background-color: rgb(206, 240, 234);
+	margin-bottom: 4px;
+	display: block;
+}
+.inner-addon {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: -36px;
+}
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+.right-addon .glyphicon { 
+	right: 0px;
+}
+.right-addon input { 
+	padding-right: 30px; 
+}
+.inner-addon input[type=text] {
+    width: 220px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.inner-addon  input[type=text]:focus {
+    width: 330px;
+}
+#rightTopMenu{
+	margin-top: 10px;
+}
+#rightTopMenu div i{
+	color: rgb(206, 240, 234);
+	font-size: 24px;
+	text-shadow: rgba(255, 255, 255, 0.0980392) -1px -1px 1px, rgba(0, 0, 0, 0.498039) 1px 1px 1px; 
+
+	margin-top:2px;
+	padding-left: 12px;
+}
+#content{
+	margin-top: 10px;
+	margin-left: 5px;
+}
+#content div:nth-child(1){
+	background-color: rgb(250, 250, 250);
+	padding: 10px;
+}
+#content h3{
+	color: #795548;
+	font-size: 50px;
+	text-shadow: rgba(255, 255, 255, 0.2) 3px 2px 3px;
+}
+/*#content p{
+	font-size: 13px;
+	font-style: italic;
+	color: #795548;
+	opacity: 50%;
+	margin-top: -10px;
+}
+#content p span{
+	color: #004D40;
+	opacity: 80%;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: bold;
+	text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+}*/
+#content div:nth-child(2){
+	background-color: rgb(250, 250, 250);
+	padding: 10px;
+	margin-top: 10px;
+}
+#content div:nth-child(2) table{
+}
+#content div:nth-child(2) table thead tr{
+	font-size: 14px;
+	text-align: justify;
+    text-justify: inter-word;
+}
+#content div:nth-child(2) table tbody .actionBtn{
+	text-align: center;
+}
+.actionBtn .edit{
+	background-color: #3299B7;
+	color:white;
+}
+.actionBtn .delete{
+	background-color: red;
+	color:white;
+}
+#add{
+	color:white;
+}
+
+/**
+ * @author: Lorence;
+ * PAGE : LOGIN.HTML
+ */
+body.login{
+ 	/** background-color: #303641; **/
+ 	background-image: url("../images/login.png");
+ 	background-repeat: no-repeat;
+ 	background-size: auto;
+ 	overflow: hidden;
+}
+#login{
+  background-image: url("../images/form.png");
+  min-height: 100%;
+}
+#login .avatar img{
+	margin-top: 32px;
+	margin-left: 16px;
+}
+#login form {
+    min-height: 100%;
+}
+#login form p{
+	color:#009688;
+	font-size: 13px;
+	font-weight: bold;
+
+	margin-top: 14px;
+	margin-left: 28px;
+}
+#login form input[type=text]{
+	margin-top: 14px;
+	margin-left: 28px;
+	width: 460px;
+}
+
+#login form input[type=password]{
+	margin-top: 14px;
+	margin-left: 28px;
+	width: 460px;
+}
+
+#login form input[type=checkbox]{
+	margin-top: 14px;
+	margin-left: 28px;	
+	margin-right: 6px;
+}
+#login form input[type=email]{
+	margin-top: 14px;
+	margin-left: 28px;
+	width: 460px;
+}
+
+#login form button[type=submit]{
+	margin-top: 14px;
+	margin-left: 28px;	
+	background-color: #2570e7;
+	color:white;
+}
+#login form input[type=submit]{
+	margin-top: 14px;
+	margin-left: 28px;
+	background-color: #2570e7;
+	color:white;
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px){
+	#login{
+	  background-image: url("../images/form.png");
+	  height: 768px;
+	}
+}
+
+/** Template for add new record  **/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+.modal .modal-content div div h3{
+	margin-top: 10px;
+	color: #0D47A1;
+}
+.modal .modal-content div div:nth-child(1) span{
+	color:red;
+	margin-top: 8px;
+}
+.modal .modal-content div div label{
+	color: #2196F3;
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/* Edit new record */
+.modal-edit, .modal-create, .modal-view {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+.modal-edit .modal-content div div h3, .modal-create .modal-content div div h3, .modal-view .modal-content div div h3{
+	margin-top: 10px;
+	color: #0D47A1;
+}
+.modal-edit .modal-content div div:nth-child(1) span,.modal-create .modal-content div div:nth-child(1) span, .modal-view .modal-content div div:nth-child(1) span{
+	color:red;
+	margin-top: 8px;
+}
+.modal-edit .modal-content div div label, .modal-create .modal-content div div label, .modal-view .modal-content div div label{
+	color: #2196F3;
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/* Delete record */
+.modal-del {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+}
+.modal-del .modal-content div div h3{
+	margin-top: 10px;
+	color: #0D47A1;
+}
+.modal-del .modal-content div div:nth-child(1) span{
+	color:red;
+	margin-top: 8px;
+}
+.modal-del .modal-content div div label{
+	color: #2196F3;
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+label.error{
+	color: red !important;
+	font-size: 10px;
+	font-style: italic;
+}
+p.timetable-teacherName{
+	font-style: italic;
+	font-size: 10px;
+	color: #ff855f;
+}
+
+
+/**
+ * @Lorence
+ * Custom form announcement
+ */
+/**
+ * @Lorence
+ * Custom form announcement
+ */
+a.tabBarChild{
+    background-color: #f44336;
+    color:white;
+    font-weight: 400;
+    font-family: 'Roboto', san-serif;
+    padding: 10px;
+}
+a.tabBarChild:hover{
+    background-color: white;
+    color: #f44336;
+}
+div.form-group{
+    width: 95%;
+    margin-left:10px;
+}
+div.specialform{
+    width: 93% !important;
+    padding-left: 10px;
+}
+
+a.active {
+    background-color: white;
+    color: #f44336;
+    font-weight: 400;
+    font-family: 'Roboto', san-serif;
+    padding: 10px;
+}
